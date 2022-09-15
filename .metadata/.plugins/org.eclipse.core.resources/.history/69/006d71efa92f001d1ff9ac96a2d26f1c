@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Matematik.Faktoriyel faktor = new Matematik().new Faktoriyel(); // inner clasa ulasmak icin önce cerceve alana ulasmalısın sonra inner clasa ulasabilirsin
+		faktor.factoriyel();
+
+	}
+
+}

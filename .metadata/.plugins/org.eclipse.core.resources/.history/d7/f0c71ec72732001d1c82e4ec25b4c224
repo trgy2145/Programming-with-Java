@@ -1,0 +1,26 @@
+
+public class Main {
+	public static void ucuncu() {
+		try {
+			int a =  20 / 0 ;
+			System.out.println(a);
+			
+		} catch (Exception e) {
+			System.out.println("sayi sifira bolunmez..");
+		} 
+	}
+	public static void ikinci() {
+		ucuncu();
+	}
+   
+	public static void birinci() {
+		ikinci();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		birinci();
+
+	}
+
+}

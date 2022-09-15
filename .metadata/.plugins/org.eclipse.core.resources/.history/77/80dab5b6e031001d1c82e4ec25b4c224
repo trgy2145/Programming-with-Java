@@ -1,0 +1,34 @@
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Set<String> s1 =  new HashSet<String>();
+		Set<String> s2 =  new LinkedHashSet<String>();
+		Set<String>  s3 =  new TreeSet<String>();
+		
+		System.out.println("***********************HashSet eklenme sırası önemli değil*****************************");
+		s1.add("ali");
+		s1.add("turgay");
+		s1.add("gökan");
+		s1.add("zeynep");
+		
+		System.out.println("***********************linkedhashset eklenme sırası önemli*****************************");
+		s2.add("ali");
+		s2.add("turgay");
+		s2.add("gökan");
+		s2.add("zeynep");
+		
+		System.out.println("***********************treeSet alfabetik sırası önemli *****************************");
+		s3.add("ali");
+		s3.add("turgay");
+		s3.add("gökan");
+		s3.add("zeynep");
+
+	}
+
+}

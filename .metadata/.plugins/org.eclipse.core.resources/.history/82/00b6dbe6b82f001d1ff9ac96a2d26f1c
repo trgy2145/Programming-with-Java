@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		class Hesapla{
+			public void hesapla(int sayi) {
+				int a = 1;
+				int fakt = 1;
+				while(a <= sayi) {
+					fakt *= a;
+					a++;
+					
+				}
+				System.out.println(fakt);
+			}
+		}
+		Hesapla faktoriyel =  new Hesapla();
+		faktoriyel.hesapla(5);
+
+	}
+
+}

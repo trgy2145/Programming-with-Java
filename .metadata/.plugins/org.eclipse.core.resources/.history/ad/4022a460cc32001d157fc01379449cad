@@ -1,0 +1,33 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		FileInputStream fis =  null;
+		 try {
+			fis = new FileInputStream("dosya.txt");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("dosya acilamadi..");
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if(fis != null) {
+					fis.close();
+				}
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				System.out.println("dosya kapanirken hata olustu...");
+				e.printStackTrace();
+			}
+		}
+
+	}
+
+}

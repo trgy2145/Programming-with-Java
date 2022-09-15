@@ -1,0 +1,26 @@
+import java.util.LinkedList;
+
+public class Main {
+	public static void yaz(LinkedList<String> a) {
+		for (String name : a) {
+			System.out.println(name);
+			
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> names =  new LinkedList<String>();
+		
+		
+		names.add("turgay");
+		names.add("nevzat");
+		names.add("sadullah");
+		names.add("bekir");
+		
+		yaz(names);
+
+	}
+
+}

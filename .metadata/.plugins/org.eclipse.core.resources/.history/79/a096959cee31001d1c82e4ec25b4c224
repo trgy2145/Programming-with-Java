@@ -1,0 +1,30 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class HashMapMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<Integer, String> hashMap = new HashMap<Integer,String>();
+		
+		hashMap.put(10,"java");
+		hashMap.put(20,"css");
+		hashMap.put(30,"php");
+		
+		// hashMap.put(10, "java");  aynısından oldugu için bir daha eklenmez
+		// hashMap.put(10, "go");  key bir kez kullanılır ve son degere güncellenir
+		
+		System.out.println(hashMap.get(10));
+		
+		
+		for (Map.Entry<Integer, String> entry : hashMap.entrySet()) {
+			Integer key = entry.getKey();
+			String val = entry.getValue();
+			
+		}
+
+	}
+
+}

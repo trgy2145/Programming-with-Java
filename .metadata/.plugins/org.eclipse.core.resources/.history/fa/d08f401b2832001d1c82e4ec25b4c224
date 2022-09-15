@@ -1,0 +1,29 @@
+
+public class Main {
+	public static void ucuncu() {
+		System.out.println("ucuncu metod calisiyor...");
+		try {
+			int a =  20 / 0 ;
+			System.out.println(a);
+			
+		} catch (Exception e) {
+			System.out.println("sayi sifira bolunmez..");
+		} 
+	}
+	public static void ikinci() {
+		System.out.println("ikinci metod calisiyor...");
+		ucuncu();
+	}
+   
+	public static void birinci() {
+		System.out.println("birinci metod calisiyor....");
+		ikinci();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		birinci();
+
+	}
+
+}

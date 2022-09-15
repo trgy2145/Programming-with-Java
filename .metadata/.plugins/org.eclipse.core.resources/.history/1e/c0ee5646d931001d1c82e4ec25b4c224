@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+public class ArrayandLinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<Integer> linkedList = new LinkedList<Integer>();
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		zamanHesapla("linkedlist", linkedList);
+	}
+	public static void zamanHesapla(String veriTipi, List<Integer> list) {
+		long baslangic ;
+		long bitis;
+		
+		baslangic =  System.currentTimeMillis();
+		
+		for (int i = 0; i < 1000000; i++) {
+			list.add(i);
+			
+		}
+		bitis = System.currentTimeMillis();
+		System.out.println(veriTipi + "'nin gecen süresi : " +(bitis - baslangic) + " ms dir..");
+	}
+
+}

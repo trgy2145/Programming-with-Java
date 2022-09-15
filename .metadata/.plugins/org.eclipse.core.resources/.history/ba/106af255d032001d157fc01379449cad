@@ -1,0 +1,18 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileWriter writer = null; //try icinde tanımlarsak bunu finally de yakalayamayız bu yüzden burda nul veriyoruz..
+		 try {
+			writer =  new FileWriter("dosya.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("doysa acilirken hata olustu.... "  );
+			e.printStackTrace();
+		}
+	}
+
+}

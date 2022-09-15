@@ -1,0 +1,40 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		FileInputStream fis =  null;
+		 try {
+			fis = new FileInputStream("dosya.txt");
+			// fis.read(); tek karakter okur ve byte olarak okur buna karaktere cevirmek lazım..dosya okurken imlec hep dosyanın basında bulunur
+			System.out.println("birinci karakter ----------> : " + (char) fis.read()); // imlec bir karakter okudu
+			System.out.println("ikinci karakter ----------> : " + (char) fis.read());  // ikinci karakter okundu
+			System.out.println("ucuncu karakter ----------> : " + (char) fis.read());  //  ücüncü karakter okundu
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("dosya acilamadi..");
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("okurken hata olustu........");
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if(fis != null) {
+					fis.close();
+				}
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				System.out.println("dosya kapanirken hata olustu...");
+				e.printStackTrace();
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;YazdırmaSınıfı&apos; to &apos;YazdırmaSinifi&apos;&#x0D;&#x0A;- Original project: &apos;GenericClass&apos;&#x0D;&#x0A;- Original element: &apos;YazdırmaSınıfı&apos;&#x0D;&#x0A;- Renamed element: &apos;YazdırmaSinifi&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;YazdırmaSınıfı&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{YazdırmaSınıfı.java[YazdırmaSınıfı" matchStrategy="1" name="YazdırmaSinifi" qualified="false" references="true" similarDeclarations="false" stamp="1662737377687" textual="false" version="1.0"/>
+</session>

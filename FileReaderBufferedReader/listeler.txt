@@ -1,0 +1,10 @@
+Turgay,Bilgisayar Muhendisligi
+Hasan,Harita Muhendisligi
+Tuba,Matematik Ögretmenligi
+Zekiye,Gıda Muhendisligi
+Kazım,Muhasebe
+Necdet,Sınıf Ögretmenligi
+Cevdet,Bilgisayar Muhendisligi
+Ilayda,Bilgisayar Muhendisligi
+hasan , Sınıf Ogretmenligi
+hasan , Sınıf Ogretmenligi

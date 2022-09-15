@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ArrayList&apos; to &apos;Arraylist&apos;" description="Rename resource &apos;ArrayList&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ArrayList" name="Arraylist" stamp="1662589092900" updateReferences="true"/>
+</session>

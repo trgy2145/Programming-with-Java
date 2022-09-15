@@ -1,0 +1,28 @@
+import java.util.ListIterator;
+import java.util.Vector;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vector<String> vektor =  new Vector<String>();
+		vektor.add("java");
+		vektor.add("php");
+		vektor.add("css");
+		
+		for (String v: vektor) {
+			System.out.println(v);
+			
+		}
+		
+		ListIterator<String> iterator = vektor.listIterator();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+			
+		}
+		
+		
+
+	}
+
+}

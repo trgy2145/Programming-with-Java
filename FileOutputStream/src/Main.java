@@ -1,0 +1,43 @@
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		FileOutputStream fos = null;
+		// File file = new File("dosya.txt");
+		try {
+			fos = new FileOutputStream("dosya.txt", true); // true dosyaya sonradan birsey eklenince öncekileri silme
+															// yanına yaz demek
+			// fos.write(65);// ASCII karsılıgı yazılır..
+			// fos.write(66);
+			// fos.write(77); // yeniden yazınca dosyayı siler üzerine yazar
+			// byte[] a = {65,66,67,68};
+			// dosyaya veri yazmak icin stringi byte cevirmek lazım; sebebi streamler 1 ve 0
+			// dan olusur bu yuzden byte cevirmek lazım
+			String s = " Turgay cempes";
+			byte[] array = s.getBytes();
+			fos.write(array);
+		} catch (FileNotFoundException e) {
+
+			System.out.println("file not found exception olustu...");
+			e.printStackTrace();
+		} catch (IOException e) {
+
+			System.out.println("yazilirken hata olustu...");
+			e.printStackTrace();
+		} finally {
+			try {
+				fos.close();
+			} catch (IOException e) {
+
+				System.out.println("dosya kapanirken hata olustu...");
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

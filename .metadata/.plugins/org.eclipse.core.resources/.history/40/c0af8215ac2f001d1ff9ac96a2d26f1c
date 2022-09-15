@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Matematik.Faktoriyel faktor = new Matematik().new Faktoriyel(); // inner clasa ulasmak icin önce cerceve alana ulasmalısın sonra inner clasa ulasabilirsin
+		Matematik.AsalMı asal = new Matematik().new AsalMı(); 
+		Matematik.Alan alan = new Matematik().new Alan(); 
+		
+		Scanner scanner =  new Scanner(System.in);
+		System.out.print("sayi giriniz :");
+		int sayi = scanner.nextInt();
+		
+		if(asal.asalMı(sayi)) {
+			System.out.println("girilen sayi asaldir...");
+		}
+		else {
+			System.out.println("sayi asal değildir");
+		}
+		
+		
+		
+		faktor.factoriyel();
+		alan.daireAlanı(4);
+
+	}
+
+}

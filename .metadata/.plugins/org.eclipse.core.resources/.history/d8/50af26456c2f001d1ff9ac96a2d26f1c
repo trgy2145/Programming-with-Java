@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+import java.util.ListIterator;
+
+public class Main {
+	public static void yaz(LinkedList<String> a) {
+		/*for (String name : a) {
+			System.out.println(name);
+			
+		}*/
+		
+		ListIterator<String> iterator = names.listIterator();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> names =  new LinkedList<String>();
+		
+		
+		names.add("turgay");
+		names.add("nevzat");
+		names.add("sadullah");
+		names.add("bekir");
+		
+		yaz(names);
+
+	}
+
+}
